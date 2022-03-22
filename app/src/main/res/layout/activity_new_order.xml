@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/d20dp"
+    tools:context="com.app.bahokrider.activities.NewOrderActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d10dp"
+        android:text="@string/new_order"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/d20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_order_received"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/d16sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgGif"
+            android:layout_width="@dimen/d200dp"
+            android:layout_height="@dimen/d200dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/timer" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/colorPrimary"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/new_order_message"
+        android:textSize="@dimen/d14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d40dp"
+            android:layout_margin="@dimen/d5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_feature_background"
+            android:stateListAnimator="@null"
+            android:text="@string/view"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d14sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d40dp"
+            android:layout_margin="@dimen/d5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_feature_background"
+            android:stateListAnimator="@null"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

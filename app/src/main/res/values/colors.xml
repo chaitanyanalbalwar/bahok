@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fe0000</color>
+    <color name="colorPrimaryDark">#b00000</color>
+    <color name="colorAccent">#fe0000</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="backgroundgray">#eeeeee</color>
+
+    <color name="titleColor">#017CB9</color>
+    <color name="graycolor">#bdbdbd</color>
+    <color name="textcolor">#002F25</color>
+    <color name="jobtitlecolor">#333</color>
+    <color name="pendingbtncolor">#F0C54C</color>
+    <color name="EmailEdit">#018EB9</color>
+
+    <color name="linkColor">#017CB9</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#fe0000</color>
+    <color name="dot_dark_screen2">#fe0000</color>
+    <color name="dot_dark_screen3">#fe0000</color>
+    <color name="dot_dark_screen4">#fe0000</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#b00000</color>
+    <color name="dot_light_screen2">#b00000</color>
+    <color name="dot_light_screen3">#b00000</color>
+    <color name="dot_light_screen4">#b00000</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+</resources>

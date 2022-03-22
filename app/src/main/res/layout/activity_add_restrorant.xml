@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".activities.NewRestaurantActivity">
+
+    <include layout="@layout/toolbar_app" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:alpha="0.15"
+        android:contentDescription="@string/emptystring"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loginback" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/d60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/d20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10dp"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/rastaurant_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d8dp"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d8dp"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    android:drawableStart="@drawable/ic_phone_in_talk_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/phone"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvlLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d8dp"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_credit_card_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/address"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d8dp"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d8dp"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etCPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/ConfirmPassword"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="@string/description"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="200"
+                    android:minHeight="@dimen/d100dp"
+                    android:minLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/d10sp"
+                android:text="@string/restaurant_logo"
+                android:textSize="@dimen/d16sp" />
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/d20dp"
+                android:background="@drawable/et_gray_border"
+                android:contentDescription="@string/emptystring"
+                android:src="@drawable/add_image" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ButtonSize"
+                android:layout_marginTop="@dimen/d22dp"
+                android:background="@drawable/btn_feature_background"
+                android:stateListAnimator="@null"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

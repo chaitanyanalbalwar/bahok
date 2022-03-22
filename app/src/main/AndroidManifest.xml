@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.bahokrider">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:name="com.app.bahokrider.DeliveryBoyApplication"
+        android:allowBackup="false"
+        android:appComponentFactory="whateverString"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/foodbahoklogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/foodbahoklogo"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="RtlEnabled"
+        tools:replace="android:hardwareAccelerated,android:allowBackup,android:appComponentFactory"
+        tools:targetApi="o">
+
+        <service
+            android:name="com.app.bahokrider.fcm.MyFireBaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/foodbahoklogo" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.app.bahokrider.activities.LauncherActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.bahokrider.activities.NewOrderActivity"
+            android:parentActivityName="com.app.bahokrider.activities.MainScreenActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.LoginActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.SignupActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.WelcomeActivity" android:exported="true"/>
+        <activity
+            android:name="com.app.bahokrider.activities.MainScreenActivity"
+            android:label="@string/title_activity_main_screen"
+            android:launchMode="singleTop" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.OTPActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.ProfileActivity" android:exported="true"/>
+        <activity
+            android:name="com.app.bahokrider.activities.OrderDetailsActivity"
+            android:parentActivityName="com.app.bahokrider.activities.MainScreenActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.ImageActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.NewRestaurantActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.TrackingActivity" android:exported="true"/>
+        <activity
+            android:name="com.app.bahokrider.activities.NotificationsActivity"
+            android:parentActivityName="com.app.bahokrider.activities.MainScreenActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.WalletActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.BankDetailsActivity" android:exported="true"/>
+        <activity android:name="com.app.bahokrider.activities.WebViewActivity" android:exported="true"/>
+
+    </application>
+
+</manifest>

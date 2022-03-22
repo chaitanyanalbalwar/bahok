@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/linkColor"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/d10dp"
+    android:padding="@dimen/d5dp">
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="@dimen/d60dp"
+        android:layout_height="@dimen/d60dp"
+        android:contentDescription="@string/emptystring"
+        android:src="@drawable/msg_default_profile" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/d5dp"
+        android:layout_marginBottom="@dimen/d5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d14sp" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_marginTop="@dimen/d2dp"
+            android:layout_marginBottom="@dimen/d2dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d12sp" />
+
+        <TextView
+            android:id="@+id/tv_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="@dimen/d30dp"
+            android:layout_height="@dimen/d30dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/emptystring"
+            android:rotation="180"
+            android:src="@drawable/backarrow" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

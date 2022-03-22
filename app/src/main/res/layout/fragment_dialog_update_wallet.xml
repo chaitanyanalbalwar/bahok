@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/d15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_white_rounded"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/d20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/d15dp"
+            android:text="@string/wallet_message"
+            android:textSize="@dimen/d14sp" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="1234567890"
+            android:gravity="center"
+            android:hint="@string/amount"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="10" />
+
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d40dp"
+            android:layout_margin="@dimen/d5dp"
+            android:background="@drawable/btn_feature_background"
+            android:stateListAnimator="@null"
+            android:text="@string/proceed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

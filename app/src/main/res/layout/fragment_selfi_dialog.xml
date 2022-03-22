@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white_rounded"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvSelfi"
+        android:layout_width="@dimen/d100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/d10dp"
+        android:text="@string/selfi"
+        android:textColor="@color/white"
+        android:textSize="@dimen/d20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSelfi"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/d10dp"
+        android:text="Hi"
+        android:textSize="@dimen/d16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/d20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/d10dp"
+            android:text="@string/salfi_dialog_message"
+            android:textSize="@dimen/d20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlCamera"
+            android:layout_width="@dimen/d150dp"
+            android:layout_height="@dimen/d150dp"
+            android:layout_margin="@dimen/d20dp">
+
+            <com.app.bahokrider.CircularImageView
+                android:id="@+id/imgSelfi"
+                android:layout_width="@dimen/d150dp"
+                android:layout_height="@dimen/d150dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/msg_default_profile" />
+
+            <ImageView
+                android:layout_width="@dimen/d40dp"
+                android:layout_height="@dimen/d40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_menu_camera" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ButtonSize"
+            android:layout_marginTop="@dimen/d22dp"
+            android:background="@drawable/btn_feature_background"
+            android:stateListAnimator="@null"
+            android:text="@string/upload"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

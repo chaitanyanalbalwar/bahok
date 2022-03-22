@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:alpha="0.15"
+        android:contentDescription="@string/emptystring"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loginback" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:gravity="center"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d30dp"
+            android:layout_marginEnd="@dimen/d30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_phone_in_talk_black_24dp"
+                android:drawablePadding="@dimen/d10dp"
+                android:hint="@string/Mobile"
+                android:inputType="phone"
+                android:imeOptions="actionDone"
+                android:maxLength="11"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ButtonSize"
+                android:layout_marginTop="@dimen/d10dp"
+                android:background="@drawable/btn_feature_background"
+                android:stateListAnimator="@null"
+                android:text="@string/request_otp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/or"
+                android:textAllCaps="true"
+                android:textSize="@dimen/d15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/d10dp"
+                android:text="@string/dont_have_account"
+                android:textSize="@dimen/d15sp" />
+
+            <TextView
+                android:id="@+id/tv_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/click_here_new_request"
+                android:textColor="@color/linkColor"
+                android:textSize="@dimen/d15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/d30dp"
+        android:gravity="center"
+        android:padding="@dimen/s12sp"
+        android:text="@string/Head5" />
+</RelativeLayout>

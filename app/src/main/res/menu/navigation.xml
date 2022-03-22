@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_orders"
+        android:icon="@drawable/orders"
+        android:title="@string/menu_orders" />
+
+   <!-- <item
+        android:id="@+id/nav_new_orders"
+        android:icon="@drawable/orders"
+        android:title="@string/menu_new_orders" />-->
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="@string/menu_home" />
+
+    <item
+        android:id="@+id/nav_wallet"
+        android:icon="@drawable/pwe_wallet"
+        android:title="@string/menu_wallet" />
+
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/more"
+        android:title="@string/menu_more" />
+
+</menu>

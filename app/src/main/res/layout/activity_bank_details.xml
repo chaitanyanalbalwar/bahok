@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.WebViewActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_app" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/d20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etAccName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10dp"
+                    android:drawableStart="@drawable/ic_credit_card_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/account_holder"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10dp"
+                    android:drawableStart="@drawable/ic_account_balance_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/bank_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etBranchName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10dp"
+                    android:drawableStart="@drawable/ic_account_balance_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/branch_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10dp"
+                    android:digits="1234567890"
+                    android:drawableStart="@drawable/ic_credit_card_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/account_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/SubTitle1"
+                app:colorControlActivated="#017CB9"
+                app:hintTextAppearance="@style/SubTitle1">
+
+                <EditText
+                    android:id="@+id/etIFSC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10dp"
+                    android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="@string/ifsc"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textAllCaps="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d20dp"
+                android:hint="@string/check_image" />
+
+            <ImageView
+                android:id="@+id/imgCheckbook"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/d10dp"
+                android:background="@drawable/et_gray_border"
+                android:contentDescription="@string/emptystring"
+                android:scaleType="centerInside"
+                android:src="@drawable/add_image" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ButtonSize"
+                android:layout_marginTop="@dimen/d22dp"
+                android:background="@drawable/btn_feature_background"
+                android:stateListAnimator="@null"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

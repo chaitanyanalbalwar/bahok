@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/d15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_white_rounded"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/d20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/d10dp"
+            android:text="@string/dialog_confirm_reject"
+            android:textSize="@dimen/d15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d40dp"
+                android:layout_margin="@dimen/d5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_feature_background"
+                android:stateListAnimator="@null"
+                android:text="@string/reject"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d14sp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d40dp"
+                android:layout_margin="@dimen/d5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_feature_background"
+                android:stateListAnimator="@null"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/d5dp">
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 0"
+        android:textSize="@dimen/d12sp" />
+
+    <ImageView
+        android:id="@+id/imgTP"
+        android:layout_width="@dimen/d30dp"
+        android:layout_height="@dimen/d30dp"
+        android:layout_margin="@dimen/d5dp"
+        android:background="@drawable/gray_circular"
+        android:padding="@dimen/d5dp"
+        android:src="@drawable/ic_card_travel_black_24dp" />
+
+    <TextView
+        android:id="@+id/tvPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="@dimen/d14sp" />
+
+
+</LinearLayout>
+
