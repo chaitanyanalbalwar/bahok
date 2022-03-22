@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_launcher.xml" value="0.21076923076923076" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22150139017608897" />
+        <entry key="app/src/main/res/layout/activity_otp.xml" value="0.21076923076923076" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.21076923076923076" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>
