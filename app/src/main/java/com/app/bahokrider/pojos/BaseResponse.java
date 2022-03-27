@@ -13,7 +13,7 @@ public class BaseResponse implements Serializable {
 
     @SerializedName("status")
     @Expose
-    private final int success = 0;
+    private int success;
     @SerializedName("message")
     @Expose
     private String message;
@@ -63,7 +63,7 @@ public class BaseResponse implements Serializable {
     @Expose
     private final List<TargetObj> targetPays = new ArrayList<>();
 
-    public int getSuccess() {
+    public int getStatus() {
         return success;
     }
 
