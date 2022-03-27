@@ -196,7 +196,6 @@ public class OTPActivity extends AppCompatActivity implements View.OnClickListen
                 return;
             }
 
-
             SharedPreferencesManager.getInstance().setSomeStringValue(this, AppConstants.USER_ID, uObj.getUserId());
             SharedPreferencesManager.getInstance().setSomeStringValue(this, AppConstants.EMAIL, uObj.getEmail());
             SharedPreferencesManager.getInstance().setSomeStringValue(this, AppConstants.FNAME, uObj.getFname());

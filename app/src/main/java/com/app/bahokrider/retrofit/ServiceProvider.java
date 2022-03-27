@@ -7,8 +7,6 @@ import com.app.bahokrider.utils.AppConstants;
 
 import org.json.JSONObject;
 
-import java.util.Map;
-
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
@@ -22,9 +20,7 @@ public class ServiceProvider implements Callback {
     private static ServiceProvider serviceProvider = null;
 
     public static synchronized ServiceProvider getInstance(IServiceCallbacks serviceCallbacks) {
-        if(serviceProvider == null){
-            serviceProvider = new ServiceProvider(serviceCallbacks);
-        }
+        serviceProvider = new ServiceProvider(serviceCallbacks);
        return serviceProvider;
     }
 
@@ -173,7 +169,7 @@ public class ServiceProvider implements Callback {
         if (response.code() == 200 || response.code() == 201) {
 
             BaseResponse result = (BaseResponse) response.body();
-            if (result.getSuccess() == 200)
+            if (result.getStatus() == 200)
                 serviceCallbacks.onResponse(response.body(), response.raw().request().url().toString());
             else
                 serviceCallbacks.onError(result.getMessage());

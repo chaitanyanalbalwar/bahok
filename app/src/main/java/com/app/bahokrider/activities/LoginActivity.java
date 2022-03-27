@@ -121,8 +121,8 @@ public class LoginActivity extends AppCompatActivity
 
         showProgressBar();
 
-        Map<String, Object> requestData = new HashMap<>();
-        requestData.put("mobileno", phoneNumber);
+//        Map<String, Object> requestData = new HashMap<>();
+//        requestData.put("mobileno", phoneNumber);
 
         ServiceProvider.getInstance(this).requestOTP(phoneNumber);
 
@@ -133,8 +133,6 @@ public class LoginActivity extends AppCompatActivity
         hideProgressBar();
         if (requestTag.contains(APIs.REQUEST_OTP)) {
             BaseResponse result = (BaseResponse) response;
-
-//            onError(result.getOTP());
 
             Intent intent = new Intent(this, OTPActivity.class);
             intent.putExtra("otp", result.getOTP());
